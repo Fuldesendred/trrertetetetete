@@ -1,0 +1,65 @@
+.btn-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 16px 20px;
+    gap: 10px;
+    border-radius: 6px;
+    border: 1.5px solid #2F80ED;
+    background: #FFF;   
+    transition: all 0.3s ease-in-out;
+    &:hover{       
+        color: #FFF;
+        background-color: #2F80ED;
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+}
+
+.btn-tipical{
+    padding: 16px 32px;
+    background-color: var(--nav-director);
+    color: var(--bg-color);
+    font-family: Exo2;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    transition: all 0.3s ease-in-out;
+    border-radius: 6px;
+    border: 1.5px solid var(--nav-director);
+
+    &:hover {
+        background: var(--bg-color);
+        color: var(--text-color);
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }    
+}
+
+.slider-btn {
+    display: flex;
+    top: 44%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    box-shadow: 15px 15px 30px 0px rgba(47, 128, 237, 0.10);
+    transition: all 0.3s ease-in-out;
+    
+    &:hover {
+        background-color: var(--nav-director);
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+}

@@ -1,0 +1,83 @@
+.dialog {
+    display: flex;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    pointer-events: all;
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    z-index: 10000;
+    align-items: center;
+    justify-content: center;
+
+    &[aria-hidden="true"] {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: var(--dialog-background);
+        cursor: pointer;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__window {
+        display: flex;
+        position: relative;
+        background-color: var(--bg-color);
+        padding: 40px 60px;
+        border-radius: 20px;
+        flex-direction: column;
+        gap: 40px;
+        width: 1040px;
+        align-items: center;
+    }
+
+    &__close {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 6px;
+        background: #F1F5F9;
+        top: -50px;
+        right: 0;
+        transition: color 0.2s ease-in;
+
+        &:hover {
+            fill: var(--bg-color);
+            background: var(--dialog-input-color);
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+
+    &__end-werify {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    &__btn-applicaton {
+        padding: 15px 20px;
+        font-size: 16px;
+        color: #F1F5F9;
+        line-height: 156.25%;
+        border-radius: 20px;
+    }
+}

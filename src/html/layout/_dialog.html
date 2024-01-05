@@ -1,0 +1,30 @@
+<div class="dialog" id="dialog-window" aria-labelledby="dialog-window" aria-hidden="true">
+
+    <div class="dialog__overlay" data-a11y-dialog-hide="true"></div>
+
+    <div class="dialog__window" role="document">
+        <button class="dialog__close reset-btn" type="button" data-a11y-dialog-hide="true" aria-label="Закрыть окно обратного звонка">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                <path d="M18.5 3L3.5 18M3.5 3L18.5 18" stroke="#041423" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+
+        <h2 class="dialog__title h2">Заказать обратный звонок</h2>
+
+        <form class="form">
+            <div class="form__input-text">
+                <label class="visually-hidden" for="input-name">Введите имя</label>
+                <input  class="form__input" type="text" name="input-name" id="input-name" placeholder="Имя">
+            </div>
+            <div class="form__input-text">
+                <label class="form__label" for="input-tel">Телефон</label>
+                <input  class="form__input" type="tel" name="input-tel" id="input-tel" placeholder="+9 (___) ___-__-__">
+            </div>
+        </form>
+        
+        <div class="dialog__end-werify">
+            <button class="dialog__btn-applicaton btn-tipical reset-btn">Отправить</button>
+            <p class="dialog__personal employee employee_personal">Нажимая на кнопку, вы принимаете Положение и Согласие <br> на обработку персональных данных</p>
+        </div>
+    </div>
+</div>

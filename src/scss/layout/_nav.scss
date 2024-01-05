@@ -1,0 +1,127 @@
+.top-nav{
+    display: flex;
+    padding-top: 24px;
+    justify-content: space-between;
+    
+
+    &__feedback{
+        display: flex;
+        gap: 24px;
+    }
+}
+
+.menu{
+    display: flex;
+    gap: 32px;
+
+    &__link{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        align-items: center;
+    
+
+        &:hover{
+            & > p {
+                transition: color 0.2s ease-in;
+                color: var(--nav-director);
+            }
+        }
+    }
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &__tel{
+        color: var(--text-color);
+        font-family: Exo2;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%;
+        text-transform:uppercase;
+
+        &:hover{
+            transition: color 0.2s ease-in;
+            color: var(--nav-director);
+        }
+    }
+
+    &__director{
+        color: var(--nav-director);
+        font-family: Exo2;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 13px;
+
+        &:hover{
+            transition: color 0.2s ease-in;
+            color: var(--primary-color);
+        }
+    }
+}
+
+.bottom-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    gap: 96px;
+}
+
+.order{
+    display: flex;
+    gap: 32px;
+
+    &__list{
+        display: flex;
+        gap: 16px;
+        align-items: center;
+
+        &:hover{
+            & > p {
+                transition: color 0.2s ease-in;
+                color: var(--nav-director);
+            }
+        }
+    }
+    &__arrow{
+        width: 12px;
+        height: 12px;
+    }
+}
+
+.select-city {
+    position: relative;
+    border-radius: 6px;
+    border: 1px solid #F1F5F9;
+    display: flex;
+    padding: 8px 16px;
+    gap: 16px;
+    align-items: center;
+    color: blue;
+    &__selector {
+        border: none;
+        width: 105px;
+        outline: none;
+        color: var(--nav-director);
+        font-family: Exo2;
+        font-size: 14px;
+        appearance: none;
+        -webkit-appearance: none;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15px;
+        text-decoration-line: underline;
+        background: url(.././assets/images/arrow.svg) no-repeat right;
+        background-position-y: calc(100% + 1px);
+        background-color: var(--bg-color);
+    }
+
+    & label, select {
+        cursor: pointer;
+    }
+}

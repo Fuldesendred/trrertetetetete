@@ -1,0 +1,28 @@
+// Breakpoints
+$tablet-bp: 1023.98px;
+$mobile-bp: 559.98px;
+
+// Units
+
+:root {
+    // Colors
+    --bg-color: #fff;
+    --text-color: #000;
+    --nav-director: #2F80ED;
+    --visualize-line: #F1F5F9;
+    --primary-color: #e2401c;
+    --bg-mission: #E5ECEF;
+    --history-info: #041423;
+    --dark-blue: #2A2A39;
+    --light-aqua: #DCEAF8;
+    --light-blue: #F0F4F8;
+    --company-btn: #3D7DBD;
+    --company-btn-hover: #2F80ED;
+    --black-blue: #2A2A39;
+    --animation-footer: #ceb9b9;
+    --dialog-background: rgba(14, 9, 65, 0.6);
+    --dialog-input-color: #4159a0;
+
+    // Fonts
+    --main-font: "Inter", "Arial", "Exo2",sans-serif;
+}

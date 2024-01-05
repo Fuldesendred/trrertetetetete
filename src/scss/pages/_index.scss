@@ -1,0 +1,629 @@
+.mission{
+    background-color: var(--light-blue);
+    padding: 24px 0 47px 0;
+    &__text{
+        text-align: start;
+        margin-bottom: 25px;
+    }
+
+    &__url{
+        color: var(--nav-director);
+    }
+
+    &__slider {
+        display: flex;
+        position: relative;        
+        flex-direction: column;
+        border-radius: 25px;        
+        padding: 125px 80px;
+        background: url(.././assets/images/background-mission-1.avif) no-repeat;
+    
+        &__title {
+            width: 459px;
+            height: 120px;
+        }
+    
+        &__info {
+            width: 327px;
+            height: 62px;
+        }
+    
+        &__next {
+            right: -25px;
+        }
+    
+        &__prev {
+            left: -25px;
+        }
+    
+        &__pagination {
+            width: 48px;
+            height: 8px;
+            position: absolute;
+            bottom: -18px;
+            right: 48.5%;
+            cursor: pointer;
+        }
+    }
+}
+
+.history-company {
+    padding: 72px 0;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        width: 336px;
+        height: 86px;
+        margin-bottom: 36px;
+    }
+        
+}
+
+.years {
+    display: flex;
+    position: relative;
+    gap: 24px;
+
+    &__history {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__info {
+        width: 200px;
+    }
+}
+
+.company-now{
+    padding: 72px 0;
+    background-color: #DCEAF8;;
+
+    &__content{
+        display: flex;
+        gap: 32px;
+    }
+
+    &__header{
+        display:flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__title {
+        width: 416px;
+        height: 80px;
+    }
+
+    &__text{
+        width: 367px;
+        height: 120px;
+    }
+
+    &__btn{
+        white-space: nowrap;
+        padding: 16px 32px;
+        width: 204px;
+    }
+
+    &__cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+}
+
+.information{
+    border-radius: 20px;
+    background-color: #FFF;
+    padding: 32px;
+    position: relative;
+
+    &__pic{
+        width: 96px;
+        height: 80px;
+        flex-shrink: 0;
+    }
+
+    &__card-numb{
+        position: absolute;
+        top: 31px;
+        right: 32px;
+    }
+
+    &__title{
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    &__info{
+        text-align: start;
+        color: #2A2A39;
+        font-family: Exo2;
+        font-size: 13px;
+        font-style: normal;
+        line-height: 130%; 
+    }
+
+    &__companies{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        margin-top: 13px;
+    }
+
+    &__company-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4px;
+        padding: 8px 16px;
+        border-radius: 6px;
+        background-color: #F1F5F9;
+
+        &:nth-child(1) .information__employee-pic{
+            width: 40px;
+        }
+
+        &:nth-child(2) .information__employee-pic{
+            width: 70px;
+        }
+
+        &:nth-child(3) .information__employee-pic{
+            width: 70px;
+            height: 19px;
+            flex-shrink: 0;
+        }
+
+        &:nth-child(4) .information__employee-pic{
+            width: 79px;
+            height: 19px;
+            flex-shrink: 0;
+        }
+
+        &:nth-child(5) .information__employee-pic{
+            width: 70px;
+        }
+
+        &:nth-child(6) .information__employee-pic{
+            width: 70px;
+            height: 19px;
+        }
+
+        &:nth-child(7) .information__employee-pic{
+            width: 62px;
+            height: 19px;
+            flex-shrink: 0;
+        }
+
+        &:nth-child(8) .information__employee-pic{
+            width: 70px;
+            height: 19px;
+            flex-shrink: 0;
+        }       
+    }
+
+    &__employee-pic{
+        padding: 4px;
+    }
+
+    &__department-block{
+        display: flex;
+        align-items: center;
+        text-align: start;
+        width: 112px;
+        height: 46px;
+        padding: 8px 12px;
+        gap: 6px;
+        border-radius: 6px;
+        background: #F1F5F9;
+    }
+
+    &__department-pic{
+        flex-shrink: 0;
+    }
+
+    &__department-info{
+        text-align: start;       
+    }
+}
+
+.achievements {
+    padding: 72px 0;
+    background-color: #F1F5F9;
+
+    &__cards{
+        display: flex;
+        gap: 32px;
+    }
+
+    &__card{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        padding: 48px 32px;
+        width: 416px;
+        height: 504px;
+        border-radius: 20px;
+        background-color: #DCEAF8;
+    }
+
+    &__pic{
+        width: 80px;
+        height: 80px;
+    }
+
+    &__btn{
+        display: flex;
+        align-items: center;
+        width: 100px;
+        height: 35px;
+        padding: 15px;
+        font-size: 13px;
+
+
+        &_filant{
+            width: 165px;
+        }
+    }
+}
+
+.reviews{
+    padding: 64px 0px 98px 0px;
+
+    &__content{
+        display: flex;
+        gap: 32px;
+    }
+
+    &__about{
+        display: flex;
+        flex-direction: column;
+        padding-top: 15px;
+        gap: 24px;
+    }
+
+    &__text{
+        width: 385px;
+    }
+
+    &__btn-check{
+        width: 159px;
+    }
+
+    &__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        background-color: #F1F5F9;
+        padding: 32px;
+        border-radius: 20px;
+    }
+
+    &__pic{
+        position: absolute;
+        width: 85.5px;
+        height: 84.5px;
+        top: -40px;
+        right: 39%;
+    }
+
+    &__picture{
+        border-radius: 50%;
+    }
+
+    &__header{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 27px;
+        margin-bottom: 19px;
+    }
+
+    &__quantity {
+        color: #2F80ED;
+        text-transform: uppercase;
+        line-height: 130%;
+    }
+
+    &__info{
+        text-align: start;
+        width: 352px;
+        line-height: 130%;
+        padding-bottom: 16px;
+    }
+}
+
+.photo-slider{
+    position: relative;
+    display: flex;
+    gap: 16px;
+
+    &__btn1{
+        width: 48px;
+        height: 48px;
+        left: -40px;
+        top: 18px;
+    }
+
+    &__btn2{
+        width: 48px;
+        height: 48px;
+        right: -40px;
+        top: 18px;
+    }
+
+    &__pic{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.vacancies{
+    padding-top: 16px;
+    position: relative;
+    padding-bottom: 73px;
+    background: #DCEAF8;
+    max-height: 416px;
+
+    &__content{
+        position: relative;
+    }
+
+    &__title {
+        margin-top: 61px;
+        margin-bottom: 24px;
+    }
+
+    &__text{
+        margin-bottom: 24px;
+        max-width: 416px;
+    }
+
+    &__btn {
+        padding: 15px;
+    }
+
+    &__pic{
+        position: absolute;
+        top: 0px;
+        max-width: 1000px;
+        right: 100px;
+        left: 580px;
+    }
+
+    &__rect-left {
+        position: absolute;
+        width: 96.869px;
+        height: 101.269px;
+        right: 840px;
+        top: 85px;   
+    }
+
+    &__rect-right {
+        position: absolute;
+        width: 96.869px;
+        height: 101.269px;
+        right: 380px;
+        top: 85px;
+    } 
+}
+
+.sertificates{
+    position: relative;
+    background-color: var(--bg-color);
+    padding: 72px 0 104px 0;
+
+    &__header{
+        position: relative;
+        padding-bottom: 125px;
+    }
+
+    &__buttons{
+        gap: 16px;
+    }
+
+    &__btn1{
+        position: absolute;
+        width: 56px;
+        height: 56px;
+        top: 0;
+        right: 64px;
+        z-index: 1;
+        box-shadow: 15px 15px 30px 0px rgba(47, 128, 237, 0.10);
+    }
+
+    &__btn2{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        width: 56px;
+        height: 56px;
+        box-shadow: 15px 15px 30px 0px rgba(47, 128, 237, 0.10);
+    }
+
+   
+}
+
+.sertificates-slider{
+    display: flex;
+    gap: 32px;
+
+    &__text-block{
+        gap: 12px;
+    }
+
+    &__content{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        border-radius: 20px;
+        width: 304px;
+        height: 184px;
+        padding-bottom: 25px;
+        background-color: #F1F5F9;
+    }
+
+    &__pic{
+        position: absolute;
+        top: -60px;
+        width: 120px;
+        height: 160px;
+    }
+
+    &__sertif {
+        color: #2F80ED;
+        line-height: 130%;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__block-pag{
+        margin-bottom: 30px;
+    }
+
+    &__pagination{
+        position: absolute;
+        cursor: pointer;
+        margin-top: 32px;
+        bottom: -62px;
+        top: 220px;
+        width: 48px;
+        right: 48.5%;
+        
+    }
+
+}
+
+.requisites{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 72px 0px 63px 0px;
+    background-color: #F1F5F9;
+
+    &__title{
+        text-align: center;
+    }
+
+    &__header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 56px;
+    }
+
+    &__buttons{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    &__btn{
+        padding: 15px;
+    }
+
+    &__content{
+        display: flex;
+        align-items: flex-start;
+        gap: 120px;
+    }
+}
+
+.company-contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    &__title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__info {
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    &__social {
+        display: flex;
+        gap: 16px;
+    }
+
+    &__link {
+        transition: all 0.3 ease-in;
+
+        &:hover > svg {
+            fill: var(--nav-director);
+        }
+
+        &:hover > svg > path {
+            fill: var(--bg-color);
+        }
+
+        &:hover > svg > g > path {
+            fill: var(--bg-color);
+        }
+    }
+}
+
+.director{
+    padding: 98px 0;
+    background-color: #DCEAF8;
+
+    &__title{
+        margin-bottom: 24px;
+    }
+
+    &__content{
+        position: relative;
+    }
+
+    &__info {
+        margin-bottom: 24px;
+        width: 416px;
+    }
+
+    &__photo {
+        position: absolute;
+        top: -100px;
+        width: 558px;
+        height: 622px;
+        right: 115px;
+    }
+
+    &__rect-left {
+        position: absolute;
+        width: 96.869px;
+        height: 101.269px;
+        right: 600px;
+        top: 0;   
+    }
+
+    &__rect-right {
+        position: absolute;
+        width: 96.869px;
+        height: 101.269px;
+        right: 130px;
+        top: 0;
+    } 
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: "";
+}

@@ -1,0 +1,142 @@
+.footer{
+    position: relative;
+    padding: 60xp 0;
+    background-color: #2F80ED;
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        padding: 53px 0px 53px 0px;
+    }
+}
+
+.general{
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+
+    &__title{
+        color: var(--bg-color);
+    }
+
+    &__info{
+        color: var(--bg-color);
+        transition: color 0.2s ease-in;
+
+        &:hover{
+            color: var(--animation-footer);
+        }
+    }
+
+    &__text-list{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+
+    &__title{
+        color: var(--bg-color);
+    }
+
+    &__text-list{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__info{
+        color: var(--bg-color);
+        transition: color 0.2s ease-in;
+
+        &:hover{
+            color: var(--animation-footer);
+        }
+    }
+}
+
+.collections{
+    display: flex;
+    flex-direction: column;
+
+    &__title{
+        margin-bottom: 34px;
+        color: var(--bg-color);
+    }
+
+    &__info{
+        margin-bottom: 10px;
+        color: var(--bg-color);
+    }
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    width: 272px;
+    
+    &__title{
+        color: var(--bg-color);
+        margin-bottom: 41px;
+    }
+}
+
+.feedback{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 23px;
+
+    &__links{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__info{
+        color: var(--bg-color);
+    }
+
+    &__icon{
+        margin-top: 5px;
+        flex-shrink: 0;
+        width: 20px;
+        height: 20px;
+        padding: 1.667px 0.922px 1.25px 1.667px;
+    }
+
+    &__tel-link, &__call {
+        color: var(--bg-color);
+        transition: color 0.2s ease-in;
+
+        &:hover{
+            color: var(--animation-footer);
+        }
+    }
+}
+
+.socials {
+    display: flex;
+    gap: 8px;
+    margin-left: 31px;
+
+    &__link {
+        transition: color 0.3s ease-in;
+
+        &:hover > svg {
+            fill: var(--bg-color);
+        }
+
+        &:hover > svg > path {
+            fill: var(--company-btn-hover);
+        }
+
+        &:hover > svg > g > path {
+            fill: var(--company-btn-hover);
+        }
+    }
+}
